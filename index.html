@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my New Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white" href="#">My Website</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Main Content -->
+  <div class="container mt-5">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        <div class="invalid-feedback">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+        <div class="invalid-feedback">
+          Please enter a password.
+        </div>
+      </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+          </div>
+    
+          <button type="submit" class="btn btn-success">Register</button>
+        </form>
+      </div>
+
+         <!-- Bootstrap Table -->
+    <h3 class="mt-5">Registered Users</h3>
+    <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- Hardcoded Data -->
+        <tr>
+          <th scope="row">1</th>
+          <td>Emma</td>
+          <td>Dawson</td>
+          <td>emma.daw@gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Chris</td>
+          <td>Sawyer</td>
+          <td>christopher@gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Michael</td>
+          <td>Barry</td>
+          <td>mikebarry@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container text-center mt-5">
+    <div class="row">
+      <!-- First Button: Visible on all screen sizes -->
+      <div class="col-12 col-md-6">
+        <button class="btn btn-primary btn-lg px-4 py-2">Visible on All Screens</button>
+      </div>
+  
+      <!-- Second Button: Hidden on small screens, visible on medium and larger screens -->
+      <div class="col-12 col-md-6">
+        <button class="btn btn-secondary btn-sm d-none d-md-block">Hidden on Small Screens</button>
+      </div>
+    </div>
+  </div>
+
+   <!-- Full-Width Image -->
+  <div class="container-fluid p-0">
+    <img src="image.jpg" class="img-fluid" alt="Full-Width Responsive Image">
+  </div>
+<!-- Circular Image Below -->
+<div class="container text-center mt-4">
+  <img src="img.jpeg" class="img-fluid rounded-circle" alt="Profile Picture">
+</div>
+</body>
+</html>
